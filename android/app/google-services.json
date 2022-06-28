@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "846865518529",
+    "firebase_url": "https://railway-341505-default-rtdb.firebaseio.com",
+    "project_id": "railway-341505",
+    "storage_bucket": "railway-341505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846865518529:android:03b2605306066dc338a940",
+        "android_client_info": {
+          "package_name": "com.example.airacs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846865518529-orsdjch9r91va8ri4aps0s5ma89ki16p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALN_W0h9Xw4PJJoWcvj9c41hL4v6d1yKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846865518529-orsdjch9r91va8ri4aps0s5ma89ki16p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
