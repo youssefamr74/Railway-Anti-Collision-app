@@ -4,8 +4,15 @@ import 'package:airasc/screens/Map.dart';
 import 'package:airasc/screens/MissionPlan.dart';
 import 'package:airasc/screens/home.dart';
 import 'package:airasc/screens/login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 class NavBar extends StatelessWidget {
+  final FirebaseAuth auth = FirebaseAuth.instance;
+  User? user;
   @override
+  String inputData(){
+    user = auth.currentUser;
+    return user!.email.toString();
+  }
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
@@ -13,8 +20,8 @@ class NavBar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('Name'),
-            accountEmail: Text('name@gmail.com'),
+            accountName: Text(''),
+            accountEmail: Text(inputData()),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.asset(

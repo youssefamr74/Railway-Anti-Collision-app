@@ -54,7 +54,6 @@ class MissionPlanState extends State<MissionPlanScreen> {
           MissionPlanState.missionNum = j;
         }
       }
-
     }
     MissionPlanState.mapMissionnum = int.parse(v[0]["missionnumber"]);
       if(v[0]["drivername"] == user!.email){

@@ -276,7 +276,7 @@ class MapScreenState extends State<MapScreen> {
     return  Set.from(List<Circle>.generate(j.length, (index) => Circle(
       circleId: CircleId(j[index]["name"]),
       center:  LatLng(j[index]["lat"], j[index]["lng"]),
-      radius: j[index]["radius"],
+      radius: j[index]["radius"].toDouble(),
       fillColor: Colors.blue.withOpacity(0.3),
       strokeColor: Colors.blue,
       strokeWidth: 1,
